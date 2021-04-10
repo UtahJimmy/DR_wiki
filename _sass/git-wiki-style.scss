@@ -150,12 +150,12 @@ img {
 }
 
 #episode_container{
-  display: flexbox;
+  display: flex;
   flex-direction: row;
 }
 
 #episode_properties, episode_content{
-  display: flexbox;
+  display: flex;
   flex-direction: column;
 }
 
