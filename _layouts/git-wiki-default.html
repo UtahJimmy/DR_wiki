@@ -3,14 +3,17 @@
 <!doctype html>
 <html>
 {% include git-wiki/sections/head/head.html %}
+ 
+ {{ page.content}}
+ 
  <div class="episode_container">
           <header class="episode-title"><h1>{{ post.title }}</h1></header>
          
         
-          <h3> {{ post.episode_teaser }} </h3>
+          <h3> {{ page.episode_teaser }} </h3>
            
      
-           <p> Air date: {{ air_date }} </p>
+           <p> Air date: {{ page.air_date }} </p>
   
            <p> Episode No.: {{ page.episode_num }}</p>
 
