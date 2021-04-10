@@ -11,16 +11,48 @@
 
     <div id="git-wiki-content">
       
-       <div class="episode">
-    <header class="episode-title"><h1>{{page.title}}</h1></header>
+       <div class="episode_container">
+          <header class="episode-title"><h1>{{page.title}}</h1></header>
+         
+         <div class = "episode_content">
+           <p> {{page.episode_teaser}} </p> 
+           
+           {{ content }}
+           
+         </div>
+         
+         <div class = "episode_properties">
+           
+           {% if page.air_date %}
+           <p> Air date: {{page.air_date }}</p>
+           {% endif %}
+           
+           {% if page.episode_num %}
+           <p> Episode No.: {{page.episode_num }}</p>
+           {% endif %}
+           
+           {% if page.season_num %}
+           <p> Season No.: {{page.season_num }}</p>
+           {% endif %}
+          
+           
+           {% if page.episode_length %}
+           <p> Length: {{page.episode_length }} </p>
+           {% endif %}
 
-  </div>
+           {% if page.num_stories %}
+           <p> No. Stories: {{page.num_stories }}</p>
+           {% endif %}
 
-  <div class ="ep-description">
-      <h3> {{page.test_field}} </h3>
-  </div>
+           {% if page.is_themed %}
+           <p> Theme: {{page.theme_type}}</p>
+           {% endif %}
+ 
+         </div>
 
-      {{ content }}
+      </div>
+
+
     </div>
 
     {% if site.inc_after_content %}
