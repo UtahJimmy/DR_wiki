@@ -149,6 +149,16 @@ img {
   padding-bottom: 55px !important;
 }
 
+#episode_container{
+  display: flexbox;
+  flex-direction: row;
+}
+
+#episode_properties, episode_content{
+  display: flexbox;
+  flex-direction: column;
+}
+
 @media print,
 screen and (max-width: 992px) {
   #git-wiki-sidebar {
