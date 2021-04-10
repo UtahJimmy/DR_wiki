@@ -14,45 +14,24 @@
        <div class="episode_container">
           <header class="episode-title"><h1>{{ page.title }}</h1></header>
          
-         <div class = "episode_content">
-           <b>  {{ page.episode_teaser }} </b>
+        
+          <h3> {{ page.episode_teaser }} </h3>
            
-           {{ content }}
-           
-         </div>
-         
-         <div class = "episode_properties">
-           
-           
+     
            <p> Air date: {{ air_date }} </p>
-           
-           
-           {% if page.episode_num %}
+  
            <p> Episode No.: {{ page.episode_num }}</p>
-           {% endif %}
-           
-           {% if page.season_num %}
+
            <p> Season No.: {{ page.season_num }}</p>
-           {% endif %}
-          
-           
-           {% if page.episode_length %}
+
            <p> Length: {{ page.episode_length }} </p>
-           {% endif %}
 
-           {% if page.num_stories %}
            <p> No. Stories: {{ page.num_stories }}</p>
-           {% endif %}
 
-           {% if is_themed %}
            <p> Theme: {{ page.theme_type}}</p>
-           {% endif %}
- 
-         </div>
-
-      </div>
-
-
+           {{ content }}
+      
+        </div>
     </div>
 
     {% if site.inc_after_content %}
